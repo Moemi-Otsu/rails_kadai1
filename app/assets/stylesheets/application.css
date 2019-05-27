@@ -1,15 +1,117 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/*HTMLの余白をとる。本当はreset.css使うべき*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    background-color: #3a9ebb;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    background-image: url("bg_header.gif");
+}
+
+header .logo a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0b4758;
+    text-shadow: 1px 1px 0px rgba(255,255,255, 0.5);
+    text-align: center;
+}
+
+header .logo a img {
+    display: block;
+    margin: 0 auto;
+}
+
+#main {
+    width: 740px;
+    margin: 0 auto 100px;
+    /*background: #f00;*/
+}
+
+#main h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#main table {
+    background: #fff;
+    margin: 0 auto 40px;
+}
+
+#main table tr td {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+#main table tr td:nth-child(1) {
+    width: 500px;
+    text-align: left;
+}
+
+#main table tr td:nth-child(2) {
+    width: 140px;
+    text-align: center;
+}
+
+#main table tr td:nth-child(3),
+#main table tr td:nth-child(4){;
+    text-align: center;
+    width: 60px;
+}
+
+#main table tr td a {
+    text-decoration: none;
+    color: #0b4758;
+    background-color: #eee;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+#main .btn_new a {
+    background-color: #b3bb3a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#main .btn_back a {
+    margin-top: 30px;
+    background-color: #eee;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#main .btn_new a:hover {
+    background-color: #ced64c;
+}
+
+#main form {
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+    background-color:  #ccc;
+    margin: 0 auto;
+    padding: 20px 0;
+}

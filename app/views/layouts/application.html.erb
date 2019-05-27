@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kadai</title>
+    <title>TwitterClone</title>
     <%= csrf_meta_tags %>
-
+    <!--<meta name="viewport" content="width=device-width">-->
+    <!--assets/stylesheets以下にある全てのcssファイル、assets/javascript以下にあるJavaScriptファイルを読込-->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
+    <header>
+      <p class="logo"><a href="/blogs">TwitterClone</a></li></p>
+    </header>
+    
     <%= yield %>
+    
+    <footer>
+      <p>© hogehoge</p>
+    </footer>
   </body>
 </html>

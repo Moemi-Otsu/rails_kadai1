@@ -1,4 +1,8 @@
 Rails.application.configure do
+  
+  #本番環境のログレベルを、重要なものだけをだすレベルに変更
+  config.log_level = :info
+  
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
