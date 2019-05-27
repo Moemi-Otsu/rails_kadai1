@@ -1,0 +1,8 @@
+<h3>以下の内容でつぶやきますか？</h3>
+
+<%= form_with(model: @blog, url: blogs_path, local: true) do |form| %>
+    <%= form.hidden_field :content %>
+    
+    <p>つぶやき：<%= @blog.content %></p>
+    <%= form.submit "つぶやきを登録する" %>
+<% end %>
