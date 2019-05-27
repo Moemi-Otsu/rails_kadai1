@@ -6,3 +6,9 @@
     <p>つぶやき：<%= @blog.content %></p>
     <%= form.submit "つぶやきを登録する" %>
 <% end %>
+
+<!--app/views/blogs/confirm.html.erb に戻るボタン用のform_withを作成する-->
+<%= form_with(model: @blog, url: new_blog_path, local: true, method: 'get') do |form| %>
+    <%= form.hidden_field :content %>
+    <%= form.submit "戻る", name: 'back' %>
+<% end %>
