@@ -108,6 +108,9 @@ header .logo a img {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     color: #fff;
     font-size: 0.8rem;
